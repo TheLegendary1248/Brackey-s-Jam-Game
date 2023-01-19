@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 /// <summary>
 /// Handles animation of explosions and summoning them
 /// </summary>
@@ -12,7 +12,7 @@ public class Explosion : MonoBehaviour
     public float time;
     float stamp;
     public float radius;
-    public new Light2D light;
+    public new UnityEngine.Rendering.Universal.Light2D light;
     public ParticleSystem sys;
     int damageCarry, delay = 0;
     object owner;
